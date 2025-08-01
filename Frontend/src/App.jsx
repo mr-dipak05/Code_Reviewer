@@ -19,10 +19,10 @@ function App() {
 
   async function reviewCode() {
     try {
-      const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+      const response = await axios.post('https://code-reviewer-backend-imxo.onrender.com', { code })
       setReview(response.data)
     } catch (error) {
-      setReview("❌ Error: Could not fetch review.\n\nCheck if the backend is running at http://localhost:3000/ai/get-review")
+      setReview("❌ Error: Could not fetch review.\n\nCheck if the backend is running at https://code-reviewer-backend-imxo.onrender.com")
       console.error(error)
     }
   }
