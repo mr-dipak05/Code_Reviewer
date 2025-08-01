@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #1e1e2f;
+}
+
+.left, .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.left {
+  background-color: #1e1e2f;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  overflow: auto;
+}
+
+.code {
+  flex: 1;
+  background-color: #1e1e2f;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.code pre {
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  background-color: transparent;
+  font-family: 'Fira Code', monospace;
+  color: #ffffff;
+}
+
+.review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(223, 223, 255);
+  padding: 0.5rem 2rem;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.7rem;
+  transition: all 0.3s ease;
+}
+
+.review:hover {
+  background-color: #1e1e2f;
+  color: white;
+}
+
+.right {
+  background-color: rgb(223, 223, 255);
+  padding: 1rem;
+  color: #1e1e2f;
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  flex: 1;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: #1e1e2f;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
+  font-family: 'Fira Code', monospace;
+}
+
+.output h1,
+.output h2,
+.output h3 {
+  color: #00ffae;
+  margin-bottom: 0.5rem;
+}
+
+.output strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.output code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #f8f8f2;
+}
+
+.output pre {
+  background-color: #000000;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.output ul,
+.output ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.output li {
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  color: #00ffae;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+}
